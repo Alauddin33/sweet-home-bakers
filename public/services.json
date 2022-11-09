@@ -1,0 +1,68 @@
+[
+    {
+        "_id": "636a70be9cfebc9829eedbb6",
+        "service_id": "1",
+        "picture": "https://img.freepik.com/premium-photo/cake-with-white-cream-chocolate-drips-pomegranate-nuts-chocolate-decor_199620-5923.jpg?w=740",
+        "name": "Angel Food",
+        "email": "cindyhill@kozgene.com",
+        "price": "450",
+        "address": "629 Canda Avenue, Stockdale, Virginia, 1345",
+        "about": "Angel food cakes are made with egg whites alone and no yolks. The whites are whipped with sugar until very firm before the flour is gently folded in, resulting in a snowy-white, airy, and delicate cake that marries beautifully with fruit. Most angel food cakes have a spongy, chewy quality derived from their relatively high sugar content and the absence of egg yolks. Baked in ungreased two-piece tube pans, angel food cakes are cooled by being inverted, since this type of cake would collapse if cooled right-side-up in the pan or if removed from the pan while still warm. There's also no butter here, so the cake is fat free.",
+        "Launch Date": "2018-11-03"
+    },
+    {
+        "_id": "636a70beeb3b0e52ada1f918",
+        "service_id": "2",
+        "picture": "https://p4.wallpaperbetter.com/wallpaper/693/690/528/berries-chocolate-cake-kumquat-wallpaper-preview.jpg",
+        "name": "Chiffon",
+        "email": "stanleypowell@kozgene.com",
+        "price": "500",
+        "address": "565 Stewart Street, Coalmont, Mississippi, 1226",
+        "about": "This fairly recent American creation was invented by a salesman who sold the recipe to General Mills, which spread the recipe through marketing materials in the 1940s and 1950s. A classic chiffon cake is kind of a cross between an oil cake and a sponge cake. It includes baking powder and vegetable oil, but the eggs are separated and the whites are beaten to soft peaks before being folded into the batter. This creates a cake with a tender crumb and rich flavor like an oil cake, but with a lighter texture that's more like a sponge cake. Chiffon cakes can be baked in tube pans like angel food cakes or layered with fillings and frostings.",
+        "Launch Date": "2016-06-08"
+    },
+    {
+        "_id": "636a70be59a63d5cb52e0f2b",
+        "service_id": "3",
+        "picture": "https://img.freepik.com/free-photo/chocolate-cake-with-dried-fruit_144627-9027.jpg?w=740&t=st=1667956644~exp=1667957244~hmac=02c743e67b77fe1b118938f51d13427241c63d3e029e9506eaf1ed22b0f9ea7f",
+        "name": "Baked Flourless",
+        "email": "alejandralancaster@kozgene.com",
+        "price": "700",
+        "address": "739 High Street, Sedley, South Dakota, 7388",
+        "about": "These include baked cheesecakes and flourless chocolate cakes. For easy removal, they're often made in a springform pan, though some can also be made in regular round layer cake pans. Often the filled pan is placed in a larger pan that's half-filled with water to insulate the delicate, creamy cake from the oven's strong bottom heat, which might give the baked cake a porous rather than silky texture. This is called baking the cake in a water bath.",
+        "Launch Date": "2020-08-29"
+    },
+    {
+        "_id": "636a70be51c00383622e2920",
+        "service_id": "4",
+        "picture": "https://img.freepik.com/free-photo/fruits-cake_74190-4962.jpg?w=740&t=st=1667956944~exp=1667957544~hmac=7f68bc2223ed83115713707059b2805d8a89a5483a692746cef7c4735fc7666a",
+        "name": "Unbaked Flourless",
+        "email": "melanieroth@kozgene.com",
+        "price": "400",
+        "address": "1105 Gulshan, Dhaka-1200 ",
+        "about": "These types of cakes are typically molded in a dessert ring or springform pan then simply chilled before unmolding. They include unbaked cheesecakes and mousse cakes. They often have a crust or bottom layer that's baked before the mousse is added. Sometimes other layers, such as genoise or biscuit, are alternated with the mousse.",
+        "Launch Date": "2022-08-17"
+    },
+    {
+        "_id": "636a70beca6a0b68516fd08d",
+        "service_id": "5",
+        "picture": "https://img.freepik.com/free-photo/vanilla-cake-dessert-with-strawberry-top_1203-8935.jpg?w=740&t=st=1667956894~exp=1667957494~hmac=fc88dd06f82cb3bd9f73b00e036f657290a903a5ea7dd75677ebdcc264cec8cf",
+        "name": "Carrot Cake",
+        "email": "nanetteholden@kozgene.com",
+        "price": "600",
+        "address": "592 Dank Court, Garfield, Arkansas, 5842",
+        "about": "Carrot cake uses the leavening practices of butter cake, but instead of butter uses a neutral oil like vegetable or canola oil. For this reason, it will keep a little longer than butter cakes but can sometimes come out on the greasy side. (The process is pretty much the same: instead of starting out beating butter and sugar, you start out whipping eggs and sugar, then add oil.)",
+        "Launch Date": "2021-02-24"
+    },
+    {
+        "_id": "636a70be99a3066bbb9350ea",
+        "service_id": "6",
+        "picture": "https://img.freepik.com/free-photo/ice-cream-cake-with-christmas-theme-cheery-top_74190-2572.jpg?w=740&t=st=1667956799~exp=1667957399~hmac=ae03e87ff413497250e4e45742483d5fcb993da128ba267473877b4c354fe9e9",
+        "name": "Red Velvet",
+        "email": "torresbird@kozgene.com",
+        "price": "550",
+        "address": "948 Regent Place, Abiquiu, Montana, 2503",
+        "about": "Red velvet cake is essentially a butter cake, though it is frequently made with oil instead of butter. In addition, cocoa is added to the cake batter to create the distinct red velvet flavor — originally it was a reaction between buttermilk and the raw cocoa widely available at the time of red velvet's inception that caused a ruddy-hued crumb. These days you'll more often find them tinted with food coloring. You might have heard the cake referred to as the $200 cake — legend has it that the red velvet cake was first baked in the 1920s by a chef at the Waldorf-Astoria. A guest was so taken with the cake that she wrote the chef, asking for the recipe — along with a bill, hence it's other name. Whatever you call it, it's delicious.",
+        "Launch Date": "2019-07-08"
+    }
+]
