@@ -1,13 +1,17 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import Review from '../Review/Review';
+import ServiceDetails from '../ServiceDetails/ServiceDetails';
+
 
 const Details = () => {
 
-    const { name } = useLoaderData();
+
 
     return (
+
         <div>
-            <h2>{name}</h2>
+            <ServiceDetails></ServiceDetails>
+            <Review></Review>
         </div>
     );
 };
