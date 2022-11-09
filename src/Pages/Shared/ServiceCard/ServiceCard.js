@@ -9,7 +9,7 @@ const ServiceCard = ({ service }) => {
                 <p className=' text-orange-500 font-semibold'>Price: {service.price} BDT</p>
                 <p> {service.about.slice(0, 100)}...</p>
                 <div className="card-actions justify-end">
-                    <button className="btn bg-lime-600 text-white ">View Details</button>
+                    <button className="btn btn-primary bg-purple-900 text-white ">View Details</button>
                 </div>
             </div>
         </div>

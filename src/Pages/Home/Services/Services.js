@@ -22,6 +22,9 @@ const Services = () => {
                     ></ServiceCard>)
                 }
             </div>
+            <div className='text-center my-6 '>
+                <button className="btn btn-warning text-slate-800 px-7 bg-orange-500">See All</button>
+            </div>
         </div>
     );
 };

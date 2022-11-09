@@ -19,7 +19,7 @@ const Header = () => {
                         {navItems}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-orange-600 text-xl "> <img width="50" height="50" src={logo} alt="" /> Sweet Home Bakers</Link>
+                <Link to='/' className=" btn btn-ghost normal-case text-orange-600 text-xl "> <img className='mr-2' width="50" height="50" src={logo} alt="" /> Sweet Home Bakers</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
@@ -27,7 +27,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Get started</a>
+                <Link to='/login' className="btn">Log in</Link>
             </div>
         </div>
     );
