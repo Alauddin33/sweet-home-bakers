@@ -1,12 +1,37 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import img from '../../assets/login.jpg'
 import { FaGoogle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 const Login = () => {
 
+    const { login, loginWithGoogle } = useContext(AuthContext);
+
     const handleLogin = event => {
         event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+
+        login(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
+
+            .catch(err => console.error(err));
+
+    }
+
+    const handleGoogleLogin = () => {
+        loginWithGoogle()
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
+
+            .catch(err => console.error(err));
     }
 
     return (
@@ -38,7 +63,7 @@ const Login = () => {
                                 <input className="btn btn-info" type="submit" value="Login" />
                             </div>
                         </form>
-                        <div className='border-2 border-indigo-600 rounded-md w-3/4 mx-auto text-center'>
+                        <div onClick={handleGoogleLogin} className='border-2 border-indigo-600 rounded-md w-3/4 mx-auto text-center'>
                             <p>Login with Google</p>
                             <button><FaGoogle></FaGoogle></button>
                         </div>

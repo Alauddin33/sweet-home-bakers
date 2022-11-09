@@ -1,6 +1,5 @@
 [
     {
-        "_id": "636a70be9cfebc9829eedbb6",
         "service_id": "1",
         "picture": "https://img.freepik.com/premium-photo/cake-with-white-cream-chocolate-drips-pomegranate-nuts-chocolate-decor_199620-5923.jpg?w=740",
         "name": "Angel Food",
@@ -11,7 +10,6 @@
         "Launch Date": "2018-11-03"
     },
     {
-        "_id": "636a70beeb3b0e52ada1f918",
         "service_id": "2",
         "picture": "https://p4.wallpaperbetter.com/wallpaper/693/690/528/berries-chocolate-cake-kumquat-wallpaper-preview.jpg",
         "name": "Chiffon",
@@ -22,7 +20,6 @@
         "Launch Date": "2016-06-08"
     },
     {
-        "_id": "636a70be59a63d5cb52e0f2b",
         "service_id": "3",
         "picture": "https://img.freepik.com/free-photo/chocolate-cake-with-dried-fruit_144627-9027.jpg?w=740&t=st=1667956644~exp=1667957244~hmac=02c743e67b77fe1b118938f51d13427241c63d3e029e9506eaf1ed22b0f9ea7f",
         "name": "Baked Flourless",
@@ -33,7 +30,6 @@
         "Launch Date": "2020-08-29"
     },
     {
-        "_id": "636a70be51c00383622e2920",
         "service_id": "4",
         "picture": "https://img.freepik.com/free-photo/fruits-cake_74190-4962.jpg?w=740&t=st=1667956944~exp=1667957544~hmac=7f68bc2223ed83115713707059b2805d8a89a5483a692746cef7c4735fc7666a",
         "name": "Unbaked Flourless",
@@ -44,7 +40,6 @@
         "Launch Date": "2022-08-17"
     },
     {
-        "_id": "636a70beca6a0b68516fd08d",
         "service_id": "5",
         "picture": "https://img.freepik.com/free-photo/vanilla-cake-dessert-with-strawberry-top_1203-8935.jpg?w=740&t=st=1667956894~exp=1667957494~hmac=fc88dd06f82cb3bd9f73b00e036f657290a903a5ea7dd75677ebdcc264cec8cf",
         "name": "Carrot Cake",
@@ -55,7 +50,6 @@
         "Launch Date": "2021-02-24"
     },
     {
-        "_id": "636a70be99a3066bbb9350ea",
         "service_id": "6",
         "picture": "https://img.freepik.com/free-photo/ice-cream-cake-with-christmas-theme-cheery-top_74190-2572.jpg?w=740&t=st=1667956799~exp=1667957399~hmac=ae03e87ff413497250e4e45742483d5fcb993da128ba267473877b4c354fe9e9",
         "name": "Red Velvet",
