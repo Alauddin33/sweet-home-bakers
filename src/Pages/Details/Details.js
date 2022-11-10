@@ -1,15 +1,16 @@
 import React from 'react';
-import Review from '../Review/Review';
+import ServiceReview from '../Review/ServiceReview/ServiceReview';
+
 import ServiceDetails from '../ServiceDetails/ServiceDetails';
 
-
 const Details = () => {
+
 
     return (
 
         <div>
             <ServiceDetails></ServiceDetails>
-            <Review></Review>
+            <ServiceReview></ServiceReview>
         </div>
     );
 };

@@ -8,6 +8,7 @@ const ServiceDetails = () => {
     const { name, picture, email, price, about, LaunchDate, like, comments } = useLoaderData();
 
     return (
+
         <div className=' w-4/5 mx-auto border-2 my-28 p-5 '>
             <div className="flex justify-between font-semibold space-x-4">
 
@@ -40,6 +41,7 @@ const ServiceDetails = () => {
                 </div>
             </div>
         </div>
+
 
     );
 };
