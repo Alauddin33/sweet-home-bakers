@@ -6,11 +6,13 @@ import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 const AddReview = () => {
     const { user } = useContext(AuthContext);
-    const { name, price, _id, } = useLoaderData();
+    const { name, _id, price, picture } = useLoaderData();
+
 
     const handleReview = (event) => {
         event.preventDefault();
         const form = event.target;
+        console.log(form);
         const userReview = form.review.value;
         console.log(userReview);
 
@@ -20,7 +22,8 @@ const AddReview = () => {
             price,
             customer: user?.displayName,
             email: user?.email,
-            userReview
+            userReview,
+            image: user?.photoURL
         }
 
 
@@ -48,12 +51,20 @@ const AddReview = () => {
 
 
     return (
-        <div>
-
-            <form onSubmit={handleReview} className="form-control">
-                <textarea name='review' className="textarea textarea-bordered h-24" placeholder="Your review"></textarea>
-                <button className=' btn btn-primary w-1/5 mx-auto ' >ADD</button>
-            </form>
+        <div className="card w-96 bg-base-100 shadow-xl mx-auto my-10">
+            <figure><img src={picture} alt="Shoes" /></figure>
+            <div className="card-body">
+                <div className='flex justify-between mb-5'>
+                    <h2 className="card-title text-orange-700">{name}</h2>
+                    <h2 className="card-title text-orange-700">Price:  {price}</h2>
+                </div>
+                <form className=' text-center ' onSubmit={handleReview}>
+                    <textarea name='review' className="textarea textarea-primary" placeholder="Your review here"></textarea> <br />
+                    <button className="btn btn-primary">Add Review</button>
+                </form>
+                <div className="card-actions justify-end">
+                </div>
+            </div>
         </div>
     );
 };
