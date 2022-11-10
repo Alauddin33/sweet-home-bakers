@@ -22,7 +22,7 @@ const ServiceDetails = () => {
             <div>
                 <img src={picture} alt="" className="object-cover w-full my-6  sm:h-96" />
 
-                <p className="text-sm dark:text-gray-400">{about}</p>
+                <p className="text-lg text-teal-800 ">{about}</p>
             </div>
             <div className="flex flex-wrap justify-between ">
                 <div className="flex space-x-2 text-sm dark:text-gray-400 my-4">

@@ -5,8 +5,6 @@ import ServiceDetails from '../ServiceDetails/ServiceDetails';
 
 const Details = () => {
 
-
-
     return (
 
         <div>
