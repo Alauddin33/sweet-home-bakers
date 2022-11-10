@@ -7,19 +7,40 @@ const Review = () => {
     const { user } = useContext(AuthContext);
 
     const handleReview = (event) => {
+        event.preventDefault();
         const form = event.target;
         const userReview = form.review.value;
+        console.log(userReview);
 
-        const order = {
+        const review = {
             service: _id,
             serviceName: name,
             price,
-            customer: user.displayName,
+            customer: user?.displayName,
             email: user?.email,
             userReview
         }
 
-        fetch()
+
+
+        fetch('http://localhost:5000/reviews', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(review)
+        })
+
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.acknowledged) {
+                    alert('review saved successfully')
+                    form.reset();
+
+                }
+            })
+            .catch(err => console.error(err));
 
     }
 
@@ -72,20 +93,26 @@ const Review = () => {
                     </tbody>
                 </table>
 
-                <div>
-                    <label htmlFor="my-modal" className="btn">Add a Review</label>
+                <div className=' text-center '>
 
-                    <input type="checkbox" id="my-modal" className="modal-toggle" />
+                    {/* The button to open modal */}
+                    <label htmlFor="my-modal-3" className="btn btn-success my-5">Add your review</label>
+
+                    {/* Put this part before </body> tag */}
+                    <input type="checkbox" id="my-modal-3" className="modal-toggle" />
                     <div className="modal">
-                        <div className="modal-box">
+                        <div className="modal-box relative">
+                            <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                            {/* form */}
                             <form onSubmit={handleReview} className="form-control">
                                 <textarea name='review' className="textarea textarea-bordered h-24" placeholder="Your review"></textarea>
-                                <div className="modal-action">
-                                    <button>< label on htmlFor="my-modal" className="btn">ADD</label></button>
-                                </div>
+                                <button className=' btn btn-primary w-1/5 mx-auto ' >ADD</button>
                             </form>
+
                         </div>
                     </div>
+
+
 
                 </div>
 

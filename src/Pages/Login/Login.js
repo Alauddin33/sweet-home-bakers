@@ -55,9 +55,7 @@ const Login = () => {
                                     <span className="label-text">Password</span>
                                 </label>
                                 <input type="password" placeholder="password" name='password' required className="input input-bordered" />
-                                <label className="label flex flex-col">
-                                    <Link className="label-text-alt link link-hover text-orange-800">Forgot password?</Link>
-                                </label>
+
                             </div>
                             <div className="form-control my-4">
                                 <input className="btn btn-info" type="submit" value="Login" />
