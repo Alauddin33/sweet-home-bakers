@@ -1,23 +1,16 @@
+
 import React, { useContext } from 'react';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
-
-const ReviewRow = ({ review, handleDelete }) => {
+const ServiceReviewRow = ({ review }) => {
     const { user } = useContext(AuthContext);
     console.log(user);
 
-    const { _id, serviceName, customer, userReview, image, price } = review;
-
-
-
+    const { serviceName, customer, userReview, image, price } = review;
 
     return (
         <tr>
-            <th>
-                <label>
-                    <button onClick={() => handleDelete(_id)} className='btn btn-ghost'>X</button>
-                </label>
-            </th>
+
             <td>
                 <div className="flex items-center space-x-3">
                     <div className="avatar">
@@ -44,4 +37,4 @@ const ReviewRow = ({ review, handleDelete }) => {
     );
 };
 
-export default ReviewRow;
+export default ServiceReviewRow;
