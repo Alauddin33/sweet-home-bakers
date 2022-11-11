@@ -31,9 +31,9 @@ const ServiceReview = () => {
                                     <input type="checkbox" className="checkbox" />
                                 </label>
                             </th>
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
+                            <th>Reviewer Name <br /> & image </th>
+                            <th>Service</th>
+                            <th>Review</th>
                             <th></th>
                         </tr>
                     </thead>

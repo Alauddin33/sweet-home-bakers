@@ -61,10 +61,11 @@ const Login = () => {
                                 <input className="btn btn-info" type="submit" value="Login" />
                             </div>
                         </form>
-                        <div onClick={handleGoogleLogin} className='border-2 border-indigo-600 rounded-md w-3/4 mx-auto text-center'>
+                        <button onClick={handleGoogleLogin} className='border-2 border-indigo-600 rounded-md w-3/4 mx-auto text-center'>
                             <p>Login with Google</p>
-                            <button><FaGoogle></FaGoogle></button>
-                        </div>
+                            <p className=' ml-32 my-2 '><FaGoogle></FaGoogle></p>
+                        </button>
+
                         <p className=" text-center text-xs py-5">New to this site? Please, <Link to='/register' className=' text-orange-800 link'> Register now</Link></p>
                     </div>
                 </div>

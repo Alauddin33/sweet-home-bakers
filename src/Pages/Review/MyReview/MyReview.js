@@ -20,7 +20,7 @@ const MyReview = () => {
 
     return (
         <div>
-            <h2> you have {reviews.length}</h2>
+
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
 
@@ -31,9 +31,9 @@ const MyReview = () => {
                                     <input type="checkbox" className="checkbox" />
                                 </label>
                             </th>
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
+                            <th>Your Name <br /> & picture </th>
+                            <th>Service</th>
+                            <th>Review</th>
                             <th></th>
                         </tr>
                     </thead>

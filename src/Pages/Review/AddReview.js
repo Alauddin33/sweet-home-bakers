@@ -12,16 +12,18 @@ const AddReview = () => {
     const handleReview = (event) => {
         event.preventDefault();
         const form = event.target;
-        console.log(form);
+
         const userReview = form.review.value;
-        console.log(userReview);
+        const userName = form.name.value;
+        const userEmail = form.email.value;
+        console.log(userName);
 
         const review = {
             service: _id,
             serviceName: name,
             price,
-            customer: user?.displayName,
-            email: user?.email,
+            customer: userName,
+            email: userEmail,
             userReview,
             image: user?.photoURL
         }
@@ -59,6 +61,8 @@ const AddReview = () => {
                     <h2 className="card-title text-orange-700">Price:  {price}</h2>
                 </div>
                 <form className=' text-center ' onSubmit={handleReview}>
+                    <input className='input input-bordered my-2' type="text" name="name" placeholder='Your name' id="" />
+                    <input className='input input-bordered my-2' type="email" name="email" defaultValue={user?.email} placeholder='Your email' id="" readOnly />
                     <textarea name='review' className="textarea textarea-primary" placeholder="Your review here"></textarea> <br />
                     <button className="btn btn-primary">Add Review</button>
                 </form>
