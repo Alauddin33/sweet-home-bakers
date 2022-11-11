@@ -5,6 +5,9 @@ import Login from "../../Pages/Login/Login";
 import Register from "../../Pages/Register/Register";
 import AddReview from "../../Pages/Review/AddReview";
 import MyReview from "../../Pages/Review/MyReview/MyReview";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import FullServices from "../../Pages/Home/Services/FullServices";
+import Blog from "../../Pages/Blog/Blog";
 
 
 
@@ -22,6 +25,14 @@ const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
+                path: '/full',
+                element: <FullServices></FullServices>
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
+            },
+            {
                 path: '/login',
                 element: <Login></Login>
             },
@@ -32,16 +43,20 @@ const router = createBrowserRouter([
             {
                 path: '/details/:id',
                 element: <Details></Details>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+                loader: ({ params }) => fetch(`https://sweet-home-bakers-server.vercel.app/services/${params.id}`),
             },
             {
                 path: '/reviews',
-                element: <MyReview></MyReview>
+                element: <PrivateRoute>
+                    <MyReview></MyReview>
+                </PrivateRoute>
             },
             {
                 path: '/addreview/:id',
-                element: <AddReview></AddReview>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                element: <PrivateRoute>
+                    <AddReview></AddReview>
+                </PrivateRoute>,
+                loader: ({ params }) => fetch(`https://sweet-home-bakers-server.vercel.app/services/${params.id}`)
             }
 
         ]

@@ -1,28 +1,34 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
+import useTitle from '../../../hooks/useTitle';
 import ReviewRow from '../ReviewRow/ReviewRow';
 
 
 const MyReview = () => {
+    useTitle('MyReview');
     const { user } = useContext(AuthContext);
     const [reviews, setReviews] = useState([]);
 
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews?email=${user?.email}`)
+        fetch(`https://sweet-home-bakers-server.vercel.app/reviews?email=${user?.email}`)
             .then(res => res.json())
             .then(data => {
+                if (data.length === 0) {
+                    alert('No reviews were added')
+                }
                 setReviews(data);
             })
 
     }, [user?.email])
 
 
+
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete this review?');
         if (proceed) {
-            fetch(`http://localhost:5000/reviews/${id}`, {
+            fetch(`https://sweet-home-bakers-server.vercel.app/reviews/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -36,6 +42,10 @@ const MyReview = () => {
                 })
         }
     }
+
+
+
+
 
     return (
         <div>
@@ -53,7 +63,7 @@ const MyReview = () => {
                             <th>Your Name <br /> & picture </th>
                             <th>Service</th>
                             <th>Review</th>
-                            <th></th>
+                            <th>Edit Review</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -1,3 +1,24 @@
+# My Website Name:  "Sweet Home Bakers"
+
+## Live site Link:
+Website link is given here: [https://sweet-home-bakers.web.app/](https://sweet-home-bakers.web.app/)
+
+# points which I make
+* 2 types of login system
+* CRUD operation
+* daisy ui framework
+* update, delete, put, patch
+* server side data management
+
+
+# List of Technology:
+* React js
+* tailwind css
+* mongodb 
+* vercel server upload
+* firebase deploy
+* nodemon
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

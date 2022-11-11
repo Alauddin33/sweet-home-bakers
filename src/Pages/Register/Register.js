@@ -2,9 +2,10 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import img from '../../assets/login.jpg'
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 
 const Register = () => {
-
+    useTitle('Register');
     const { createUser } = useContext(AuthContext);
 
     const handleRegister = event => {
@@ -12,6 +13,7 @@ const Register = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
+
 
         createUser(email, password)
             .then(result => {

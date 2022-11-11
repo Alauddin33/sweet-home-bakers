@@ -30,9 +30,7 @@ const ServiceReviewRow = ({ review }) => {
                 <span className="badge badge-ghost badge-sm">Price: {price} BDT</span>
             </td>
             <td>{userReview}</td>
-            <th>
-                <button className="btn btn-ghost btn-xs">details</button>
-            </th>
+
         </tr>
     );
 };

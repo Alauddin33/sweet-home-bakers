@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import useTitle from '../../../hooks/useTitle';
 import ServiceCard from '../../Shared/ServiceCard/ServiceCard';
 
 const Services = () => {
-    useTitle('services')
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('https://sweet-home-bakers-server.vercel.app/services')
+        fetch('https://sweet-home-bakers-server.vercel.app/fullservices')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
@@ -25,9 +22,7 @@ const Services = () => {
                     ></ServiceCard>)
                 }
             </div>
-            <div className='text-center my-6 '>
-                <Link to='/full'><button className="btn btn-warning text-slate-800 px-7 bg-orange-500">See All</button></Link>
-            </div>
+
         </div>
     );
 };

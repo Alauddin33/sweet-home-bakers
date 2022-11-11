@@ -4,9 +4,24 @@ import logo from '../../../assets/logo.png'
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
 const Header = () => {
-    const { user } = useContext(AuthContext);
+    const { user, logout } = useContext(AuthContext);
+
+    const handleLogout = () => {
+        logout()
+            .then()
+            .catch();
+
+    }
+
+
+
     const navItems = <>
         <li className="link link-primary"> <Link to='/'>Home</Link> </li>
+        <li className="link link-primary"> <Link to='/blog'>Blog</Link> </li>
+        <li className="link link-primary"> <Link to='/reviews'>My Reviews</Link> </li>
+
+
+
     </>
 
     return (
@@ -29,15 +44,19 @@ const Header = () => {
             </div>
             {
                 user?.email ?
-                    <>
-                        <div className="navbar-end">
-                            <Link to='/reviews' className="btn">My Reviews</Link>
-                        </div>
-                    </>
+
+
+                    <div className="navbar-end">
+                        <button onClick={handleLogout} className="btn">Logout</button>
+                    </div>
+
                     :
+
+
                     <div className="navbar-end">
                         <Link to='/login' className="btn">Log in</Link>
                     </div>
+
             }
 
         </div>
